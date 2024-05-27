@@ -8,7 +8,7 @@ std::map<char, unsigned> count(const std::string &string)
     if (string.empty())
         return {};
     for (auto &c : string)
-        occurences[tolower(c)]++;
+        occurences[c]++;
     return occurences;
 }
 
