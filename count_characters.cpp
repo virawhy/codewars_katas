@@ -14,5 +14,8 @@ std::map<char, unsigned> count(const std::string &string)
 
 int main()
 {
+    std::map<char, unsigned> test = count("Destabilization");
+    for (auto &m : test)
+        std::cout << m.first << "\t" << m.second << std::endl;
     return 0;
 }
